@@ -19,12 +19,6 @@ const ImageSchema = new mongoose.Schema({
 });
 
 const Image = mongoose.model('images', ImageSchema);
-// insert
-async function insertImage() {
-    const img = new Image({ url: "https://placekitten.com/300/300" });
-    await img.save();
-    console.log("Image inserted!");
-}
 
 // Call it once
 insertImage();
