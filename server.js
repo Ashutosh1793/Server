@@ -20,9 +20,6 @@ const ImageSchema = new mongoose.Schema({
 
 const Image = mongoose.model('images', ImageSchema);
 
-// Call it once
-insertImage();
-
 // Routes
 app.get('/images', async (req, res) => {
     try {
